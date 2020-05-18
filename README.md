@@ -54,14 +54,17 @@ services:
           - nlp
     ports:
       - "8080:8080"
-      
+
+
 volumes:
   esdata1:
     driver: local
 
 networks:
   nlae:
+    name: nlae
     driver: bridge
+
 ```
 
 
